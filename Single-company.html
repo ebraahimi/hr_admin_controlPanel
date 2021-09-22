@@ -53,7 +53,7 @@
                     <li class="nav-item ">
                         <a class="nav-link" href="./document.html">
                             <i class="fa fa-user"></i>
-                            <p>مستندات</p>
+                            <p>گزارش های پژوهشی</p>
                         </a>
                     </li>
                     <li class="nav-item ">
@@ -72,7 +72,7 @@
             <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
                 <div class="container-fluid">
                     <div class="navbar-wrapper">
-                        <a class="navbar-brand" href="">داشبورد</a>
+                        <a class="navbar-brand" href="">اطلاعات شرکت</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="sr-only">Toggle navigation</span>
@@ -140,8 +140,8 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-primary">
-                                    <h4 class="card-title ">فهرست کاربران </h4>
-                                    <p class="card-category">گزارش تمامی کاربران موجود</p>
+                                    <h4 class="card-title ">اطلاعات شرکت</h4>
+                                    <p class="card-category">تمامی اطلاعات مربوط به شرکت</p>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
@@ -155,25 +155,10 @@
                                                     نام کاربری
                                                 </th>
                                                 <th>
-                                                    نام
-                                                </th>
-                                                <th>
-                                                    نام خانوادگی
-                                                </th>
-                                                <th>
                                                     نام شرکت
                                                 </th>
                                                 <th>
-                                                    شماره تلفن همراه
-                                                </th>
-                                                <th>
-                                                    شماره تلفن ثابت
-                                                </th>
-                                                <th>
-                                                    آدرس
-                                                </th>
-                                                <th>
-                                                    ایمیل
+                                                    بیشتر
                                                 </th>
                                             </thead>
                                             <tbody>
@@ -185,25 +170,12 @@
                                                         @petroshimi
                                                     </td>
                                                     <td>
-                                                        علی
-                                                    </td>
-                                                    <td>
-                                                        داسمه
-                                                    </td>
-                                                    <td>
                                                         شرکت پتروشیمی
                                                     </td>
                                                     <td>
-                                                        09123456789
-                                                    </td>
-                                                    <td>
-                                                        021-12345677
-                                                    </td>
-                                                    <td>
-                                                        میدان جهان کودک ، میدان میدان میدان میدان میدان
-                                                    </td>
-                                                    <td>
-                                                        info@petroshimi.com
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
+                                                            جزئیات
+                                                        </button>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -233,9 +205,6 @@
                                                     نام خانوادگی
                                                 </th>
                                                 <th>
-                                                    نام بخش
-                                                </th>
-                                                <th>
                                                     وضعیت بسته
                                                 </th>
                                                 <th>
@@ -254,22 +223,10 @@
                                                         داسمه
                                                     </td>
                                                     <td>
-                                                        بخش کنترل کیفی
+                                                        باز - <span>30</span> روز باقی مانده
                                                     </td>
                                                     <td>
-                                                        باز - 30 روز باقی مانده
-                                                    </td>
-                                                    <td>
-                                                        <form action="" method="">
-                                                            <div class="row">
-                                                                <div class="form-group col-6">
-                                                                    <input type="text" class="form-control" placeholder="نوع بسته مورد نظر">
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <button class="btn btn-primary">ثبت</button>
-                                                                </div>
-                                                            </div>
-                                                        </form>
+                                                        بسته ویژه
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -455,6 +412,70 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal -->
+            <div class="modal fade bd-example-modal-lg" tabindex="2" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg col-10">
+                    <div class="modal-content">
+                        <div class="card">
+                            <div class="card-header card-header-primary">
+                                <h4 class="card-title ">اطلاعات شرکت</h4>
+                                <p class="card-category">تمامی اطلاعات مربوط به شرکت</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <!-- first tabel -->
+                                    <table class="table">
+                                        <thead class=" text-primary">
+                                            <th>
+                                                نام
+                                            </th>
+                                            <th>
+                                                نام خانوادگی
+                                            </th>
+                                            <th>
+                                                شماره تلفن همراه
+                                            </th>
+                                            <th>
+                                                شماره تلفن ثابت
+                                            </th>
+                                            <th>
+                                                آدرس
+                                            </th>
+                                            <th>
+                                                ایمیل
+                                            </th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    علی
+                                                </td>
+                                                <td>
+                                                    داسمه
+                                                </td>
+                                                <td>
+                                                    09123456789
+                                                </td>
+                                                <td>
+                                                    021-12345677
+                                                </td>
+                                                <td>
+                                                    میدان جهان کودک ، میدان میدان میدان میدان میدان
+                                                </td>
+                                                <td>
+                                                    info@petroshimi.com
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
