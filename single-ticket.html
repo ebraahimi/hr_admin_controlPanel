@@ -42,7 +42,38 @@
 
 <body class="">
     <div class="wrapper">
-        <div class="pt-5">
+        <div class="sidebar" data-color="purple" data-background-color="white" data-image="assets/img/sidebar-1.jpg">
+            <!-- control panel -->
+            <div class="logo">
+                <a href="#" class="simple-text logo-normal">
+                پنل مدیریت ادمین
+                </a>
+            </div>
+            <!-- Side bar -->
+            <div class="sidebar-wrapper">
+                <ul class="nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./dashboard.html">
+                            <i class="fa fa-dashboard"></i>
+                            <p>داشبورد</p>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./document.html">
+                            <i class="fa fa-user"></i>
+                            <p>گزارش های پژوهشی</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="./all-tickets.html">
+                            <i class="fa fa-list-alt"></i>
+                            <p>همه تیکت ها</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top">
                 <div class="container-fluid">
@@ -151,64 +182,17 @@
                             </div>
                         </div>
                         <!-- second table - register new Ticket -->
-                        <div class="col-md-9 mx-auto">
-                            <div class="card card-profile">
-                                <div class="card-header card-header-primary">
-                                    <h4 class="card-title ">افزودن پاسخ جدید به تیکت فعلی</h4>
-                                </div>
-                                <div class="card-body d-flex justify-content-center">
-                                    <!-- form -->
-                                    <form action="" method="" class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating" id="name">نام</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating" id="familyname">سمت</label>
-                                                    <input type="text" class="form-control" value="ادمین">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label>متن تیکت</label>
-                                                    <div class="form-group">
-                                                        <label class="bmd-label-floating"></label>
-                                                        <textarea class="form-control" rows="5" id="ticket-text"></textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <span class="row mt-3">
-                                            <span class="col-md-12">
-                                                <input type="file" id="myFile" name="filename2">
-                                            </span>
-                                        </span>
-                                        <span class="row mt-3">
-                                            <span class="col-md-12 ">
-                                                <!-- it contain ID notification- check js -->
-                                                <button type="submit" class="btn btn-primary " onclick="send_new_user_info()">ثبت تیکت</button>
-                                            </span>
-                                        </span>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- third table - last ticket conversation -->
-                        <div class="col-md-12">
+                        <div class="col-md-9">
                             <div class="card card-profile">
                                 <div class="card-header card-header-primary">
                                     <h4 class="card-title ">گفتگو های تیکت فعلی</h4>
                                 </div>
                                 <div class="card-body">
+                                    <!-- نظر شما -->
                                     <div class="row ">
-                                        <div class="col-6">
+                                        <div class="col-md-6 col-12">
                                             <div class="card card-profile"> 
-                                                <div class="card-header card-header-success col-3 ">
+                                                <div class="card-header card-header-success col-lg-3 col-md-5 col-sm-3 col-5">
                                                     <h4 class="card-title ">شما</h4>
                                                 </div>
                                                 <div class="card-body d-flex justify-content-center">
@@ -217,10 +201,11 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- نظر کاربر -->
                                     <div class="row ltr">
-                                        <div class="col-6">
+                                        <div class="col-md-6 col-12">
                                             <div class="card card-profile ltr">
-                                                <div class="card-header card-header-warning col-3">
+                                                <div class="card-header card-header-warning col-lg-3 col-md-5 col-sm-3 col-5">
                                                     <h4 class="card-title text-left">کاربر</h4>
                                                 </div>
                                                 <div class="card-body d-flex justify-content-center">
@@ -229,6 +214,32 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- form -->
+                                    <form action="" method="" class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <div class="form-group">
+                                                        <label class="bmd-label-floating">متن تیکت</label>
+                                                        <textarea class="form-control" rows="2" id="ticket-text"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+                                            <span class="row mt-3">
+                                                <span class="col-md-12">
+                                                    <input type="file" id="myFile" name="filename2">
+                                                </span>
+                                            </span>
+                                            <span class="row mt-3">
+                                                <span class="col-md-12 ">
+                                                    <!-- it contain ID notification- check js -->
+                                                    <button type="submit" class="btn btn-primary " onclick="send_new_user_info()">ثبت تیکت</button>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>

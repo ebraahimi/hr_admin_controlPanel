@@ -137,240 +137,36 @@
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-header card-header-primary">
-                                    <h4 class="card-title ">اطلاعات شرکت</h4>
-                                    <p class="card-category">تمامی اطلاعات مربوط به شرکت</p>
+                        <!-- first table - company data -->
+                        <div class="col-md-6">
+                            <div class="card card-profile">
+                                <div class="card-avatar">
+                                    <a href="javascript:;">
+                                        <img class="img" src="assets/img/faces/marc.jpg" />
+                                    </a>
                                 </div>
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <!-- first tabel -->
-                                        <table class="table">
-                                            <thead class=" text-primary">
-                                                <th>
-                                                    ID
-                                                </th>
-                                                <th>
-                                                    نام کاربری
-                                                </th>
-                                                <th>
-                                                    نام شرکت
-                                                </th>
-                                                <th>
-                                                    بیشتر
-                                                </th>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        1
-                                                    </td>
-                                                    <td>
-                                                        @petroshimi
-                                                    </td>
-                                                    <td>
-                                                        شرکت پتروشیمی
-                                                    </td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
-                                                            جزئیات
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h4 class="card-title text-center" style="direction: ltr;">
+                                        <span>@petroshimi</span>
+                                    </h4>
+                                    <p class="card-category text-center">شرکت پتروشیمی</p>
+                                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target=".bd-example-modal-lg">
+                                        مشاهده جزئیات
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-header card-header-primary">
-                                    <h4 class="card-title ">فهرست کاربران شرکت </h4>
-                                    <p class="card-category"> گزارش تمامی کاربران موجود در این شرکت</p>
-                                </div>
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <!-- 2end tabel -->
-                                        <table class="table">
-                                            <thead class=" text-primary">
-                                                <th>
-                                                    ID
-                                                </th>
-                                                <th>
-                                                    نام
-                                                </th>
-                                                <th>
-                                                    نام خانوادگی
-                                                </th>
-                                                <th>
-                                                    وضعیت بسته
-                                                </th>
-                                                <th>
-                                                    انتخاب بسته
-                                                </th>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        1
-                                                    </td>
-                                                    <td>
-                                                        علی
-                                                    </td>
-                                                    <td>
-                                                        داسمه
-                                                    </td>
-                                                    <td>
-                                                        باز - <span>30</span> روز باقی مانده
-                                                    </td>
-                                                    <td>
-                                                        بسته ویژه
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-header card-header-primary">
-                                    <h4 class="card-title ">گزارش کاربران شرکت </h4>
-                                    <p class="card-category"> گزارش وضعیت تمامی کاربران موجود در این شرکت</p>
-                                </div>
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <!-- third tabel -->
-                                        <table class="table">
-                                            <thead class=" text-primary">
-                                                <th>
-                                                    ID
-                                                </th>
-                                                <th>
-                                                    نام
-                                                </th>
-                                                <th>
-                                                    نام خانوادگی
-                                                </th>
-                                                <th>
-                                                    جنسیت
-                                                </th>
-                                                <th>
-                                                    سن
-                                                </th>
-                                                <th>
-                                                    داشبورد
-                                                </th>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        1
-                                                    </td>
-                                                    <td>
-                                                        علی
-                                                    </td>
-                                                    <td>
-                                                        داسمه
-                                                    </td>
-                                                    <td>
-                                                        مرد
-                                                    </td>
-                                                    <td>
-                                                        25
-                                                    </td>
-                                                    <td>
-                                                        <a href="assessment.html" class="text-light"><button class="btn btn-info">ارزیابی</button></a>
-                                                        <a href="train.html" class="text-light"><button class="btn btn-warning">تمرین</button></a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-header card-header-primary">
-                                    <h4 class="card-title ">گزارش پرداخت های قبلی شرکت </h4>
-                                    <p class="card-category">گزارش وضعیت تمامی پرداختی های موجود</p>
-                                </div>
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <!-- third tabel -->
-                                        <table class="table">
-                                            <thead class=" text-primary">
-                                                <th>
-                                                    شناسه پرداخت
-                                                </th>
-                                                <th>
-                                                    نوع پکیج
-                                                </th>
-                                                <th>
-                                                    تعداد ماه
-                                                </th>
-                                                <th>
-                                                    تعداد کاربر
-                                                </th>
-                                                <th>
-                                                    قیمت
-                                                </th>
-                                                <th>
-                                                    تاریخ ثبت
-                                                </th>
-                                                <th>
-                                                    وضعیت
-                                                </th>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        15615653465
-                                                    </td>
-                                                    <td>
-                                                        ویژه
-                                                    </td>
-                                                    <td>
-                                                        <span>12</span>
-                                                        ماه
-                                                    </td>
-                                                    <td>
-                                                        <span>20</span>
-                                                        کاربر
-                                                    </td>
-                                                    <td>
-                                                        <Span>250.000</Span>
-                                                        تومان
-                                                    </td>
-                                                    <td>
-                                                        20/20/2020
-                                                    </td>
-                                                    <td>
-                                                        <span>3</span>
-                                                        نفر باقی مانده
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
+                        <!-- tickets -->
+                        <div class="col-md-6">
                             <div class="card">
                                 <div class="card-header card-header-primary">
                                     <h4 class="card-title "> تیکت های شرکت</h4>
-                                    <p class="card-category">گزارش تمامی تیکت های موجود</p>
+                                    <p class="card-category">گزارش تمامی مکالمه های مربوط به شرکت</p>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <!-- third tabel -->
                                         <table class="table">
-                                            <thead class=" text-primary">
+                                            <thead class="text-center">
                                                 <th>
                                                     ID تیکت
                                                 </th>
@@ -381,15 +177,11 @@
                                                     وضعیت تیکت
                                                 </th>
                                                 <th>
-                                                    تاریخ ثبت تیکت
+                                                    جزئیات  
                                                 </th>
-                                                <th>
-                                                    آخرین پاسخ تیکت
-                                                </th>
-                                                
                                             </thead>
                                             <tbody>
-                                                <tr>
+                                                <tr class="text-center">
                                                     <td>
                                                         <a href="single-ticket.html?ticketid=1">1</a>
                                                     </td>
@@ -400,10 +192,7 @@
                                                         <a href="single-ticket.html?ticketid=1">باز</a>
                                                     </td>
                                                     <td>
-                                                        <a href="single-ticket.html?ticketid=1">12/20/2021</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="single-ticket.html?ticketid=1">20/20/2021</a>
+                                                        <a href="single-ticket.html?ticketid=1" class="btn btn-primary">مشاهده جزئیات</a>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -412,13 +201,46 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- company's users -->
+                        <div class="col-md-6">
+                                <div class="card">
+                                    
+                                    <div class="card-header card-header-success ">
+                                        <h4 class="card-title ">فهرست کاربران شرکت </h4>
+                                        <p class="card-category"> گزارش تمامی کاربران موجود در این شرکت</p>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-center">
+                                        <a href="company-users.html" class="btn btn-info">
+                                            جهت مشاهده لیست کاربران شرکت کلیک کنید
+                                        </a>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <!-- finance -->
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header card-header-warning ">
+                                    <h4 class="card-title text-center">گزارش پرداخت های قبلی شرکت</h4>
+                                    <p class="card-category text-center">گزارش وضعیت تمامی پرداختی های موجود</p>
+                                </div>
+                                <div class="card-body d-flex justify-content-center">
+                                    <a href="finance.html" class="btn btn-danger">
+                                        جهت مشاهده لیست پرداختی های شرکت کلیک کنید
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        
                     </div>
                 </div>
             </div>
 
             <!-- modal -->
             <div class="modal fade bd-example-modal-lg" tabindex="2" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg col-10">
+                <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="card">
                             <div class="card-header card-header-primary">
@@ -427,9 +249,12 @@
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
-                                    <!-- first tabel -->
+                                    <!--  tabel -->
                                     <table class="table">
                                         <thead class=" text-primary">
+                                            <th>
+                                                ID
+                                            </th>
                                             <th>
                                                 نام
                                             </th>
@@ -451,6 +276,9 @@
                                         </thead>
                                         <tbody>
                                             <tr>
+                                                <td>
+                                                    1
+                                                </td>
                                                 <td>
                                                     علی
                                                 </td>
